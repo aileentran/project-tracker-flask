@@ -39,8 +39,8 @@ def student_add():
     last_name = request.form.get("last_name")
     github = request.form.get("github")
 
-
-    student_info = hackbright.make_new_student(first_name, last_name, github)
+    #technically returns nothing for now
+    hackbright.make_new_student(first_name, last_name, github)
 
     return render_template("confirmation.html", github=github)
 

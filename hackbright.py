@@ -56,6 +56,7 @@ def make_new_student(first_name, last_name, github):
     db.session.commit()
 
     print(f"Successfully added student: {first_name} {last_name}")
+    #look up how to return last db entry
 
 
 def get_project_by_title(title):
